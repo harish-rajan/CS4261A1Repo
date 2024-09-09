@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "593631179772",
+    "firebase_url": "https://mobileappsassignone-default-rtdb.firebaseio.com",
+    "project_id": "mobileappsassignone",
+    "storage_bucket": "mobileappsassignone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593631179772:android:ab63c29a2b7fb2dd1a7879",
+        "android_client_info": {
+          "package_name": "com.devpatel.weatherapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593631179772-sansaq1m5949f35qokr3n3332i75htp1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgcGkF-4reLWC2P0qb3lojpsovtfqE9qQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593631179772-sansaq1m5949f35qokr3n3332i75htp1.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "593631179772-4151s6i8ig0c3g8ht85qt85kf39jnf0t.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.weatherApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
