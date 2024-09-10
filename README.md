@@ -1,6 +1,7 @@
 # CS4261A1Repo
 
 This is how we run and deploy it
+
 firebase login    
 firebase init      
 flutter build web  
