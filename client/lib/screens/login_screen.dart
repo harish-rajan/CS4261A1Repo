@@ -3,6 +3,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import '../screens/weather_screen.dart';  // Import WeatherScreen
 
 class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
+
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }
@@ -51,7 +53,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       body: Container(
         width: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
             colors: [Colors.deepPurpleAccent, Colors.blueAccent],
             begin: Alignment.topCenter,
@@ -67,7 +69,7 @@ class _LoginScreenState extends State<LoginScreen> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 // App title or logo
-                Text(
+                const Text(
                   'Welcome Back!',
                   style: TextStyle(
                     fontSize: 32,
@@ -75,19 +77,19 @@ class _LoginScreenState extends State<LoginScreen> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: 40),
+                const SizedBox(height: 40),
 
                 // Email input field
                 TextFormField(
                   controller: _emailController,
                   keyboardType: TextInputType.emailAddress,
-                  style: TextStyle(color: Colors.white),
+                  style: const TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     hintText: 'Email',
-                    hintStyle: TextStyle(color: Colors.white70),
+                    hintStyle: const TextStyle(color: Colors.white70),
                     filled: true,
                     fillColor: Colors.white.withOpacity(0.2),
-                    contentPadding: EdgeInsets.symmetric(vertical: 18, horizontal: 20),
+                    contentPadding: const EdgeInsets.symmetric(vertical: 18, horizontal: 20),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
                       borderSide: BorderSide.none,
@@ -96,19 +98,19 @@ class _LoginScreenState extends State<LoginScreen> {
                   validator: (value) =>
                       value!.isEmpty ? 'Please enter an email' : null,
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
 
                 // Password input field
                 TextFormField(
                   controller: _passwordController,
                   obscureText: true,
-                  style: TextStyle(color: Colors.white),
+                  style: const TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     hintText: 'Password',
-                    hintStyle: TextStyle(color: Colors.white70),
+                    hintStyle: const TextStyle(color: Colors.white70),
                     filled: true,
                     fillColor: Colors.white.withOpacity(0.2),
-                    contentPadding: EdgeInsets.symmetric(vertical: 18, horizontal: 20),
+                    contentPadding: const EdgeInsets.symmetric(vertical: 18, horizontal: 20),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
                       borderSide: BorderSide.none,
@@ -117,28 +119,28 @@ class _LoginScreenState extends State<LoginScreen> {
                   validator: (value) =>
                       value!.isEmpty ? 'Please enter a password' : null,
                 ),
-                SizedBox(height: 40),
+                const SizedBox(height: 40),
 
                 // Login button or loading indicator
                 _isLoading
-                    ? CircularProgressIndicator(
+                    ? const CircularProgressIndicator(
                         color: Colors.white,
                       )
                     : ElevatedButton(
                         onPressed: _login,  // Trigger the login function
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.orangeAccent,
-                          padding: EdgeInsets.symmetric(
+                          padding: const EdgeInsets.symmetric(
                               vertical: 15, horizontal: 80),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(30),
                           ),
-                          textStyle: TextStyle(
+                          textStyle: const TextStyle(
                             fontSize: 18, 
                             fontWeight: FontWeight.bold
                           ),
                         ),
-                        child: Text('Login'),
+                        child: const Text('Login'),
                       ),
               ],
             ),
